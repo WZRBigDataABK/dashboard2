@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja Akcji</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: #4c4eaf;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #4c4eaf;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(90deg, #534caf, #6f66d9);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #6f66d9, #534caf);
+        }
+        .data-container, .charts-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #6f66d9;
+            color: white;
+        }
+        td {
+            background-color: #f4f4f4;
+        }
+        .chart {
+            margin: 20px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f4f4f4;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Wyszukiwarka Akcji</h1>
+    <form method="POST">
+        <label for="symbol">Wprowadź symbol akcji:</label>
+        <input type="text" id="symbol" name="symbol" required>
+        <button type="submit">Szukaj</button>
+    </form>
+    {% if stock_data %}
+        <div class="data-container">
+            <h2>Dane Akcji:</h2>
+            {{ stock_data|safe }}
+        </div>
+        <div class="data-container">
+            <h2>Statystyki Opisowe:</h2>
+            <ul>
+                <li>Średnia wartość zamknięcia: {{ descriptive_stats.mean_close }}</li>
+                <li>Mediana wartości zamknięcia: {{ descriptive_stats.median_close }}</li>
+                <li>Najwyższa wartość zamknięcia: {{ descriptive_stats.max_close }}</li>
+                <li>Najniższa wartość zamknięcia: {{ descriptive_stats.min_close }}</li>
+                <li>Odchylenie standardowe: {{ descriptive_stats.std_close }}</li>
+                <li>Wariancja: {{ descriptive_stats.var_close }}</li>
+            </ul>
+        </div>
+        <div class="data-container">
+            <h2>Wykresy Cen Zamknięcia i Wolumenu:</h2>
+            <img src="{{ url_for('static', filename='close_volume_plots.png') }}" alt="Wykresy Cen Zamknięcia i Wolumenu" width="100%">
+        </div>
+        {% if chart_paths %}
+            <div class="data-container">
+                <h2>Interaktywne Wykresy:</h2>
+                {% for chart_type, chart_path in chart_paths.items() %}
+                    {% if chart_type != 'line' and chart_type != 'close_volume' %}
+                        <div class="chart">
+                            <h3>{{ chart_type.capitalize() }}</h3>
+                            <iframe src="{{ url_for('static', filename=chart_path.split('/')[-1]) }}" width="100%" height="400"></iframe>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+        
+    {% endif %}
+</body>
+</html>
