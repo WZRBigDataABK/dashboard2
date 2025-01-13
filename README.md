@@ -24,7 +24,7 @@
 # Scenariusze Testowe
 | Kod Testu | Scenariusz Testowy| Wynik |Tester| Data Testu| Priorytet|
 |-------|-------------------|--------|------------|---------------|-------|
-|T01| Wyszukiwarka pozwala na wpisywanie stickerów firm | Test Udany | BH 19/12/2024 | Kluczowy|
+|T01| Wyszukiwarka pozwala na wpisywanie stickerów firm | Test Udany | BH | 19/12/2024 | Kluczowy|
 |T02| Aplikacja poprawnie pobiera dane o cenach akcji wybranej firmy: należy wybrać firmę i sprawdzić poprawność danych | Test Udany | BH | 19/12/2024 | Kluczowy|
 |T03| Aplikacja poprawnie oblicza wskaźniki: należy sprawdzić wyświetlane miary | Test Udany | BH | 19/12/2024 | Kluczowy|
 |T04| Aplikacja generuje wszystkie wykresy zawarte w wymaganiach | Test Udany | BH | 19/12/2024 | Kluczowy|
