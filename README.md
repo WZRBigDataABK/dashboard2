@@ -27,7 +27,7 @@
 |T01| Wyszukiwarka pozwala na wpisywanie stickerów firm | Test Udany | BH | 19/12/2024 | Kluczowy|
 |T02| Aplikacja poprawnie pobiera dane o cenach akcji wybranej firmy: należy wybrać firmę i sprawdzić poprawność danych | Test Udany | BH | 19/12/2024 | Kluczowy|
 |T03| Aplikacja poprawnie oblicza wskaźniki: należy sprawdzić wyświetlane miary | Test Udany | BH | 19/12/2024 | Kluczowy|
-|T04| Aplikacja generuje wszystkie wykresy zawarte w wymaganiach | Test Udany | BH | 19/12/2024 | Kluczowy|
+|T04| Aplikacja generuje wszystkie wykresy zawarte w wymaganiach | Test Udany | JP | 19/12/2024 | Kluczowy|
 |T05| Aplikacja pozwala na przybliżenie widoku wykresów | Test Udany |AK | 28/12/2024 | Ważny |
 |T06| Aplikacja pozwala na pobranie widoku wybranego wykresu jako plik PNG: należy przy każdym wykresie kliknąć ikonę aparatu | Test Udany |AK | 28/12/2024 | Umiarkowany |
 |T07| Aplikacja pozwala na zaznaczanie dowolnego obszaru dla wygenerowanych wykresów: | Test Udany |AK | 28/12/2024 | Ważny |
