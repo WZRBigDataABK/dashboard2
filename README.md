@@ -21,6 +21,6 @@
 |FD-018 |obliczanie ryzyka dla portfela użytkownika | opcjonalne       | funkcjonalne      | 
 
 
-#Scenariusze Testowe
+# Scenariusze Testowe
 | Kod Testu | Scenariusz Testowy| Wynik |Tester| Data Testu| Priorytet|
 |-------|-------------------|--------|------------|---------------|-------|
