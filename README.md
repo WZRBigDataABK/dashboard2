@@ -19,3 +19,8 @@
 |FD-016 |Prognozy   | opcjonalne       | funkcjonalne      |
 |FD-017 |zapisywanie portfela użytkownika | opcjonalne       | funkcjonalne      |
 |FD-018 |obliczanie ryzyka dla portfela użytkownika | opcjonalne       | funkcjonalne      | 
+
+
+#Scenariusze Testowe
+| Kod Testu | Scenariusz Testowy| Wynik |Tester| Data Testu| Priorytet|
+|-------|-------------------|--------|------------|---------------|-------|
