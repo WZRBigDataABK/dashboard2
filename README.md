@@ -1,6 +1,6 @@
 # Wymagania
 | Kod |  Funkcjonalność    | Wymagania      | Kategoria         |
-|--------------------|----------------|-------------------|
+|---------|--------------------|----------------|-------------------|
 |FD-001 |Połączenie z API zawierającym dane z NASDAQ    | Wymagane       | funkcjonalne      |
 |FD-002 |Wyszukiwarka firm NASDAQ    | Wymagane       | funkcjonalne      |
 |FD-003 |Statystyki opisowe i pozycyjne (mediana, średnia,      | Wymagane       | funkcjonalne      |
