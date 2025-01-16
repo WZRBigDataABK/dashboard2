@@ -1,4 +1,4 @@
-1. Charakterystyka oprograowania
+# Charakterystyka oprograowania
    
 a) Nazwa skrócona: Dashboard Inwestora
 
