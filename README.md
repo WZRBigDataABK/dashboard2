@@ -118,5 +118,13 @@ b) Warunki licencyjne: Dane wykorzystane w aplikacji pochodzą z serwisu Aplpha 
 3. Połączenie internetowe do komunikacji z API Alpha Vantage.
 4. Edytor kodu, np. Visual Studio Code (1.83.1).
 
+Instrukcja instalacyjna:
+1. Zainstaluj wszystkie pozycje wyeminione w punkcie wymgania systemowe
+2. Pobierz folder z plikami z Githuba
+3. Uruchom skrypt w języku Python w środowisku (np. Visual Studio Code)
+4. Wjedź w wygenerowny link
+
+
+
 ---
 
