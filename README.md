@@ -122,7 +122,7 @@ Instrukcja instalacyjna:
 1. Zainstaluj wszystkie pozycje wyeminione w punkcie wymgania systemowe
 2. Pobierz folder z plikami z Githuba
 3. Uruchom skrypt w języku Python w środowisku (np. Visual Studio Code)
-4. Wjedź w wygenerowny link
+4. Kliknij w wygenerowny link
 
 
 
