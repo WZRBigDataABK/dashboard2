@@ -62,7 +62,7 @@ b) Warunki licencyjne: Dane wykorzystane w aplikacji pochodzą z serwisu Aplpha 
 | Pandas                         | Przetwarzanie danych             | 2.1.1        |
 | Matplotlib                     | Tworzenie wykresów statycznych   | 3.8.0        |
 | Plotly                         | Tworzenie interaktywnych wykresów| 5.16.0       |
-| HTML/CSS                       | Frontend aplikacji               | -            |
+| HTML/CSS                       | Frontend aplikacji               | 5          |
 
 ### Narzędzia Programistyczne
 - **Visual Studio Code (1.83.1)**: Edytor kodu źródłowego z wsparciem dla języków i frameworków.
